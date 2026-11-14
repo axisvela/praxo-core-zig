@@ -8,6 +8,7 @@ human-in-the-loop approval, checkpoints, events, and tool calling.
 - Registry: Source
 - Install: `Source build (see README)`
 - Documentation: https://axisvela.github.io/praxo-core/languages/zig/
+- Examples: https://github.com/axisvela/praxo-core-zig/tree/main/language/zig/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-zig
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/zig
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
