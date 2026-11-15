@@ -9,9 +9,9 @@ Zig 0.17 implementation of the PRAXO-CORE agent contract. The normative contract
 | Package | `praxo-core-zig` |
 | Registry | Source |
 | Build | Source build (see README) |
-| Source version | `0.6.0` |
+| Source version | `0.7.0` |
 | Published version | not published |
-| Source tag | `zig/v0.6.0` |
+| Source tag | `zig/v0.7.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/zig/ |
