@@ -60,6 +60,7 @@ Runnable examples live under [`language/zig/examples`](language/zig/examples).
 | [provider-fallback](language/zig/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
 | [retry](language/zig/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
 | [service](language/zig/examples/service) | This example defines a transport-neutral request handler with health, principal, and run cases. |
+| [session-checkpoint](language/zig/examples/session-checkpoint) | This example saves a session checkpoint in memory, restores it between agent turns, and continues the conversation. The deterministic model returns `turn <request message count>`. |
 | [streaming](language/zig/examples/streaming) | This example accumulates streamed chunks and checks that they reconstruct the final output. |
 | [structured-output](language/zig/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
 
