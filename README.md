@@ -54,6 +54,7 @@ Runnable examples live under [`language/zig/examples`](language/zig/examples).
 | [checkpoint](language/zig/examples/checkpoint) | This example uses the Zig Core checkpoint allowlist for a registered payload round trip. |
 | [consumer](language/zig/examples/consumer) | This starter uses the Zig Core agent loop with a deterministic model. It does not require a network connection, credentials, or a model service. |
 | [event-sink](language/zig/examples/event-sink) | This example uses Zig Core sink composition to fan out events and filter the tool-only stream. |
+| [hitl](language/zig/examples/hitl) | This example demonstrates a write tool that requires human approval: |
 | [identity-policy](language/zig/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, role-mismatched, and tenant-mismatched actions. |
 | [live-model](language/zig/examples/live-model) | This example connects the Zig Core OpenAI-compatible adapter to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/zig/examples/mcp) | This example uses a caller-owned in-process transport with the Zig MCP client. |
