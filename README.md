@@ -9,9 +9,9 @@ Zig 0.17 implementation of the PRAXO-CORE agent contract. The normative contract
 | Package | `praxo-core-zig` |
 | Registry | Source |
 | Build | Source build (see README) |
-| Source version | `0.5.0` |
+| Source version | `0.6.0` |
 | Published version | not published |
-| Source tag | `zig/v0.5.0` |
+| Source tag | `zig/v0.6.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/zig/ |
@@ -52,8 +52,10 @@ Runnable examples live under [`language/zig/examples`](language/zig/examples).
 | Example | What it shows |
 | --- | --- |
 | [checkpoint](language/zig/examples/checkpoint) | This example uses the Zig Core checkpoint allowlist for a registered payload round trip. |
+| [consumer](language/zig/examples/consumer) | This starter uses the Zig Core agent loop with a deterministic model. It does not require a network connection, credentials, or a model service. |
 | [event-sink](language/zig/examples/event-sink) | This example uses Zig Core sink composition to fan out events and filter the tool-only stream. |
 | [identity-policy](language/zig/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, role-mismatched, and tenant-mismatched actions. |
+| [live-model](language/zig/examples/live-model) | This example connects the Zig Core OpenAI-compatible adapter to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/zig/examples/mcp) | This example uses a caller-owned in-process transport with the Zig MCP client. |
 | [provider-fallback](language/zig/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
 | [retry](language/zig/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
