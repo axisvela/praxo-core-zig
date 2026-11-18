@@ -1,6 +1,6 @@
 # PRAXO-CORE for Zig
 
-Zig 0.17 implementation of the PRAXO-CORE agent contract. The normative contract is [`spec/`](spec/README.md); Go remains the reference implementation.
+Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The normative contract is [`spec/`](spec/README.md); Go remains the reference implementation.
 
 ## At a glance
 
@@ -51,6 +51,7 @@ Runnable examples live under [`language/zig/examples`](language/zig/examples).
 
 | Example | What it shows |
 | --- | --- |
+| [advanced-delegation](language/zig/examples/advanced-delegation) | Application-level parent/child delegation plus six governance negative checks. |
 | [checkpoint](language/zig/examples/checkpoint) | This example uses the Zig Core checkpoint allowlist for a registered payload round trip. |
 | [consumer](language/zig/examples/consumer) | This starter uses the Zig Core agent loop with a deterministic model. It does not require a network connection, credentials, or a model service. |
 | [event-sink](language/zig/examples/event-sink) | This example uses Zig Core sink composition to fan out events and filter the tool-only stream. |
@@ -59,6 +60,7 @@ Runnable examples live under [`language/zig/examples`](language/zig/examples).
 | [live-model](language/zig/examples/live-model) | This example connects the Zig Core OpenAI-compatible adapter to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/zig/examples/mcp) | This example uses a caller-owned in-process transport with the Zig MCP client. |
 | [provider-fallback](language/zig/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
+| [representative-chain](language/zig/examples/representative-chain) | Deterministic representative chain covering MCP record, final-argument authorization, governed child delegation, OTel/Harmovela events, and an edited denial with zero effects. |
 | [retry](language/zig/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
 | [service](language/zig/examples/service) | This example defines a transport-neutral request handler with health, principal, and run cases. |
 | [session-checkpoint](language/zig/examples/session-checkpoint) | This example saves a session checkpoint in memory, restores it between agent turns, and continues the conversation. The deterministic model returns `turn <request message count>`. |
