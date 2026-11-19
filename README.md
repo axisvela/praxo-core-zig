@@ -9,9 +9,9 @@ Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The norma
 | Package | `praxo-core-zig` |
 | Registry | Source |
 | Build | Source build (see README) |
-| Source version | `0.7.0` |
+| Source version | `0.8.0` |
 | Published version | not published |
-| Source tag | `zig/v0.7.0` |
+| Source tag | `zig/v0.8.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/zig/ |
@@ -37,8 +37,8 @@ This implementation is source-only. Follow the build instructions in [`language/
 | Capability | Status | Detail |
 | --- | --- | --- |
 | OpenAI-compatible model | native | `openaicompat.Adapter` with `std.http`; SSE streaming reassembly |
-| Anthropic model | native | `anthropic.Adapter`; injectable transport; Anthropic SSE streaming |
-| Gemini model | native | `gemini.Adapter`; injectable transport; Gemini SSE streaming |
+| Anthropic model | native | `anthropic.Adapter`; injectable transport; `generateStream` reassembles Anthropic SSE |
+| Gemini model | native | `gemini.Adapter`; injectable transport; `generateStream` reassembles Gemini SSE |
 | MCP client | native | `mcp.Client`; stdio and curl-backed `HttpTransport` for Streamable HTTP 2025-03-26 |
 | Harmovela sink | native | `harmovela` |
 | OpenTelemetry sink | native (transport seam) | `otel.Sink`; caller supplies OTLP/HTTP transport |
