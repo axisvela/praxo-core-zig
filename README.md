@@ -12,6 +12,8 @@ Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The norma
 | Source version | `0.8.0` |
 | Published version | not published |
 | Source tag | `zig/v0.8.0` |
+| Tutorial tag | `zig/tutorial/v0.1.0` |
+| Examples tag | `zig/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/zig/ |
@@ -66,6 +68,16 @@ Runnable examples live under [`language/zig/examples`](language/zig/examples).
 | [session-checkpoint](language/zig/examples/session-checkpoint) | This example saves a session checkpoint in memory, restores it between agent turns, and continues the conversation. The deterministic model returns `turn <request message count>`. |
 | [streaming](language/zig/examples/streaming) | This example accumulates streamed chunks and checks that they reconstruct the final output. |
 | [structured-output](language/zig/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
+
+## Scenario Tutorials
+
+Scenario-oriented tutorials live under `language/zig/Tutorial`.
+
+| Path | What it shows |
+| --- | --- |
+| [Tutorial](language/zig/Tutorial) | Bounded Zig examples built on the native Core. Each tutorial is a small, runnable slice with explicit non-goals and an application-owned boundary; none is a complete industry pr... |
+| [drone-fleet-plan](language/zig/Tutorial/drone-fleet-plan) | A bounded first slice of TL-01, not an airspace or flight-control system. It reads fixed drone waypoint state, drafts a review-only waypoint plan and flags a conflict zone for a... |
+| [gateway-health](language/zig/Tutorial/gateway-health) | A scoped edge tutorial over the native MIT Zig Core. It reads one fixed `gateway-100` health snapshot through an application-owned `GatewayAdapter` function table and drafts an... |
 
 ## Verify
 
