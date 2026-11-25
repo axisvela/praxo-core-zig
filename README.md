@@ -12,8 +12,6 @@ Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The norma
 | Source version | `0.8.0` |
 | Published version | not published |
 | Source tag | `zig/v0.8.0` |
-| Tutorial tag | `zig/tutorial/v0.1.0` |
-| Examples tag | `zig/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/zig/ |
