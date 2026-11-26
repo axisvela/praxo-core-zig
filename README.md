@@ -77,6 +77,8 @@ Scenario-oriented tutorials live under `language/zig/Tutorial`. Planning context
 | [drone-fleet-plan](language/zig/Tutorial/drone-fleet-plan) | A bounded first slice of TL-01, not an airspace or flight-control system. It reads fixed drone waypoint state, drafts a review-only waypoint plan and flags a conflict zone for a... |
 | [gateway-health](language/zig/Tutorial/gateway-health) | A scoped edge tutorial over the native MIT Zig Core. It reads one fixed `gateway-100` health snapshot through an application-owned `GatewayAdapter` function table and drafts an... |
 
+## Reference Applications
+
 No accepted end-to-end reference application is recorded for this language yet. Candidate goals are tracked in the [Reference Application Portfolio](https://axisvela.github.io/praxo-core/project/roadmap/#reference-application-portfolio).
 
 ## Verify
