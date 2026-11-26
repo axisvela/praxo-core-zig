@@ -1,6 +1,6 @@
 # PRAXO-CORE for Zig
 
-Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The normative contract is [`spec/`](spec/README.md); Go remains the reference implementation.
+Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The normative contract is [`spec/`](https://github.com/axisvela/praxo-core/blob/main/spec/README.md); Go remains the reference implementation.
 
 ## At a glance
 
@@ -11,7 +11,8 @@ Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The norma
 | Build | Source build (see README) |
 | Source version | `0.9.0` |
 | Published version | not published |
-| Source tag | `zig/v0.9.0` |
+| Publication status | source-only |
+| Canonical source tag | [`zig/v0.9.0`](https://github.com/axisvela/praxo-core/tree/zig/v0.9.0) |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/zig/ |
@@ -30,7 +31,7 @@ Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The norma
 
 ## Quick start
 
-This implementation is source-only. Follow the build instructions in [`language/zig/README.md`](language/zig/README.md).
+No published package is available. Follow the source build instructions in [`language/zig/README.md`](language/zig/README.md).
 
 ## What's included
 
@@ -130,7 +131,7 @@ This mirror contains the language source and the shared `spec/` vectors, so the 
 - Mirror repository: https://github.com/axisvela/praxo-core-zig
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
 
-This repository is a discovery mirror of the canonical Zig source. The monorepo remains the source of truth and the release workflow source.
+This repository is a discovery mirror of the canonical Zig source. The monorepo remains the source of truth and the release workflow source. The mirror's `main` branch tracks current source, not a release snapshot. Source tags refer to the canonical monorepo and are not necessarily present in this mirror; syncing the branch does not publish mirror tags or registry packages.
 
 PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
