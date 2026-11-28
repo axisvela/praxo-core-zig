@@ -1,6 +1,6 @@
 # PRAXO-CORE for Zig
 
-Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The normative contract is [`spec/`](https://github.com/axisvela/praxo-core/blob/main/spec/README.md); Go remains the reference implementation.
+PRAXO-CORE (also written praxocore) is an embeddable, MIT-licensed agent framework. Zig 0.17 implementation of the PRAXO-CORE AI agent framework contract. The normative contract is [`spec/`](https://github.com/axisvela/praxo-core/blob/main/spec/README.md); Go remains the reference implementation.
 
 ## At a glance
 
@@ -74,9 +74,9 @@ Scenario-oriented tutorials live under `language/zig/Tutorial`. Planning context
 
 | Path | What it shows |
 | --- | --- |
-| [Tutorial](language/zig/Tutorial) | Bounded Zig examples built on the native Core. Each tutorial is a small, runnable slice with explicit non-goals and an application-owned boundary; none is a complete industry pr... |
-| [drone-fleet-plan](language/zig/Tutorial/drone-fleet-plan) | A bounded first slice of TL-01, not an airspace or flight-control system. It reads fixed drone waypoint state, drafts a review-only waypoint plan and flags a conflict zone for a... |
-| [gateway-health](language/zig/Tutorial/gateway-health) | A scoped edge tutorial over the native MIT Zig Core. It reads one fixed `gateway-100` health snapshot through an application-owned `GatewayAdapter` function table and drafts an... |
+| [Tutorial](language/zig/Tutorial) | Bounded Zig examples built on the native Core. Each tutorial is a small, runnable slice with explicit non-goals and an application-owned boundary; none is a complete industry product. |
+| [drone-fleet-plan](language/zig/Tutorial/drone-fleet-plan) | A bounded first slice of TL-01, not an airspace or flight-control system. It reads fixed drone waypoint state, drafts a review-only waypoint plan and flags a conflict zone for application-owned review. No flight, avoidance or geofence command. |
+| [gateway-health](language/zig/Tutorial/gateway-health) | A scoped edge tutorial over the native MIT Zig Core. It reads one fixed `gateway-100` health snapshot through an application-owned `GatewayAdapter` function table and drafts an operator review action. The adapter is an in-process fixture. This tutorial does not implement MQTT, OPC UA, a socket, a real device SDK, a live model or a device write. |
 
 ## Reference Applications
 
@@ -103,6 +103,11 @@ python api-snapshot.py --check
 ```
 
 This mirror contains the language source and the shared `spec/` vectors, so the implementation can be built and tested here. See [`language/zig/README.md`](language/zig/README.md) for the exact commands. The monorepo CI runs conformance, API snapshot, and native tests for this implementation.
+
+## Boundaries
+
+Reference application source is not end-to-end portfolio acceptance; follow each README's scope and evidence.
+PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
 ## Community
 
@@ -133,6 +138,5 @@ This mirror contains the language source and the shared `spec/` vectors, so the 
 
 This repository is a discovery mirror of the canonical Zig source. The monorepo remains the source of truth and the release workflow source. The mirror's `main` branch tracks current source, not a release snapshot. Source tags refer to the canonical monorepo and are not necessarily present in this mirror; syncing the branch does not publish mirror tags or registry packages.
 
-PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
 MIT licensed.
